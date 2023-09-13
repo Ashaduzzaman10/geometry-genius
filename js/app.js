@@ -16,8 +16,8 @@ document.getElementById("Parallelogram").addEventListener("click", function () {
 });
 
 document.getElementById("Rhombus").addEventListener("click", function () {
-  const resutlRhombus = CalculateInputResult("baseInput1", "baseInput2");
-  const result = parseInt(resutlRhombus * 0.5);
+  const resultRhombus = CalculateInputResult("baseInput1", "baseInput2");
+  const result = parseInt(resultRhombus * 0.5);
   printingResult("result", result);
 });
 
