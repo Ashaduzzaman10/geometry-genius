@@ -35,12 +35,13 @@
 
     <section class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Triangle start here  -->
         <div class="col">
           <div class="card">
             <img class="img-fluid mt-4 ms-2 me-2" src="./images/triangle.png" />
             <div class="card-body">
               <h5 class="text-center fw-bold">Triangle</h5>
-              <h6 class="text-center fw-light">Area (A) = 0.5 X b X h</h6>
+              <h6 class="text-center fw-light">Area (A) = 0.5 * b * h</h6>
               <div class="input-group gap-2">
                 <input type="text" class="form-control" placeholder="b" />
                 <span class="input-group-addon"> cm </span>
@@ -56,12 +57,44 @@
             </button>
           </div>
         </div>
+        <!-- Triangle end here  -->
+        <!-- Rectangle start here  -->
         <div class="col">
           <div class="card">
-            <img class="img-fluid mt-4 ms-2 me-2" src="./images/triangle.png" />
+            <img
+              class="img-fluid mt-4 ms-2 me-2"
+              src="./images/rectangle.png"
+            />
             <div class="card-body">
-              <h5 class="text-center fw-bold">Triangle</h5>
-              <h6 class="text-center fw-light">Area (A) = 0.5 X b X h</h6>
+              <h5 class="text-center fw-bold">Rectangle</h5>
+              <h6 class="text-center fw-light">Area (A) = w * l</h6>
+              <div class="input-group gap-2">
+                <input type="text" class="form-control" placeholder="w" />
+                <span class="input-group-addon"> cm </span>
+                <input type="text" class="form-control" placeholder="l" />
+                <span class="input-group-addon"> cm </span>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary col-md-6 text-center ms-5 mt-3 mb-3"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+        <!-- Rectangle end  here  -->
+        <!-- Parallelogram start here -->
+        <div class="col">
+          <div class="card">
+            <img
+              class="img-fluid mt-4 ms-2 me-2"
+              src="./images/parallelogram.png"
+            />
+            <div class="card-body">
+              <h5 class="text-center fw-bold">Parallelogram</h5>
+              <h6 class="text-center fw-light">Area (A) = b * h</h6>
+              <h6 class="text-center fw-light">b = 10 cm , h = 12 cm </h6>
               <div class="input-group gap-2">
                 <input type="text" class="form-control" placeholder="b" />
                 <span class="input-group-addon"> cm </span>
@@ -77,27 +110,7 @@
             </button>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img class="img-fluid mt-4 ms-2 me-2" src="./images/triangle.png" />
-            <div class="card-body">
-              <h5 class="text-center fw-bold">Triangle</h5>
-              <h6 class="text-center fw-light">Area (A) = 0.5 X b X h</h6>
-              <div class="input-group gap-2">
-                <input type="text" class="form-control" placeholder="b" />
-                <span class="input-group-addon"> cm </span>
-                <input type="text" class="form-control" placeholder="h" />
-                <span class="input-group-addon"> cm </span>
-              </div>
-            </div>
-            <button
-              type="button"
-              class="btn btn-primary col-md-6 text-center ms-5 mt-3 mb-3"
-            >
-              Calculate
-            </button>
-          </div>
-        </div>
+        <!-- Parallelogram end here -->
         <div class="col">
           <div class="card">
             <img class="img-fluid mt-4 ms-2 me-2" src="./images/triangle.png" />
