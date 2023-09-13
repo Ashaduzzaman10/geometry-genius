@@ -11,3 +11,9 @@ document
     const areaOfRectangle = CalculateInputResult("width", "length");
     printingResult("result", areaOfRectangle);
   });
+
+// Parallelogram calculation 
+document.getElementById("Parallelogram").addEventListener("click", function () {
+  const areaParallelogram = CalculateInputResult("base1", "height1");
+  printingResult("result", areaParallelogram)
+  });
