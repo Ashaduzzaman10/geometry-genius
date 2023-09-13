@@ -14,11 +14,10 @@ document.getElementById("Parallelogram").addEventListener("click", function () {
   const areaParallelogram = CalculateInputResult1("base1", "height1");
   printingResult("result", areaParallelogram);
 });
-
+//Rhombus calculation 
 document.getElementById("Rhombus").addEventListener("click", function () {
   const resultRhombus = CalculateInputResult("baseInput1", "baseInput2");
-  const result = parseInt(resultRhombus * 0.5);
-  printingResult("result", result);
+  printingResult("result", resultRhombus);
 });
 
 // Pentagon calculation
