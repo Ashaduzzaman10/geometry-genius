@@ -1,19 +1,35 @@
 // triangle calculation
 document.getElementById("Calculate-btn").addEventListener("click", function () {
   const baseInput = CalculateInputResult("box-1", "box-2");
-  const result = parseFloat(baseInput / 2);
-  printingResult("result", result);
+  printingResult("result", baseInput);
 });
 //Rectangle calculation
-document
-  .getElementById("rectangle-btn")
-  .addEventListener("click", function () {
-    const areaOfRectangle = CalculateInputResult("width", "length");
-    printingResult("result", areaOfRectangle);
-  });
+document.getElementById("rectangle-btn").addEventListener("click", function () {
+  const areaOfRectangle = CalculateInputResult1("width", "length");
+  printingResult("result", areaOfRectangle);
+});
 
-// Parallelogram calculation 
+// Parallelogram calculation
 document.getElementById("Parallelogram").addEventListener("click", function () {
-  const areaParallelogram = CalculateInputResult("base1", "height1");
-  printingResult("result", areaParallelogram)
-  });
+  const areaParallelogram = CalculateInputResult1("base1", "height1");
+  printingResult("result", areaParallelogram);
+});
+
+document.getElementById("Rhombus").addEventListener("click", function () {
+  const resutlRhombus = CalculateInputResult("baseInput1", "baseInput2");
+  const result = parseInt(resutlRhombus * 0.5);
+  printingResult("result", result);
+});
+
+// Pentagon calculation
+document.getElementById("Pentagon").addEventListener("click", function () {
+  const PentagonArea = CalculateInputResult("PentagonP", PentagonArea);
+  printingResult("result", PentagonArea);
+});
+
+// Ellipse calculation
+document.getElementById("Ellipse").addEventListener("click", function () {
+  const ellipseInput = CalculateInputResult1("EllipseBase", "EllipseHeight");
+  const areaOfEllipse = Math.PI * ellipseInput;
+  printingResult("result", areaOfEllipse);
+});
