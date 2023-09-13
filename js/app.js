@@ -7,4 +7,7 @@ document.getElementById("Calculate-btn").addEventListener("click", function () {
 //Rectangle calculation
 document
   .getElementById("rectangle-btn")
-  .addEventListener("click", function () {});
+  .addEventListener("click", function () {
+    const areaOfRectangle = CalculateInputResult("width", "length");
+    printingResult("result", areaOfRectangle);
+  });
