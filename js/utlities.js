@@ -1,15 +1,16 @@
-function CalculateResult(elementId1, elementId2) {
+// initial math for all 
+function CalculateInputResult(elementId1, elementId2) {
   const base = document.getElementById(elementId1);
   const baseNumber = parseFloat(base.value);
   const height = document.getElementById(elementId2);
   const heightNumber = parseFloat(base.value);
-  const sum = parseFloat((baseNumber * heightNumber) / 2);
-  const resultBox = document.getElementById("result");
-  resultBox.innerText = sum;
+  const sum = parseFloat((baseNumber * heightNumber));
   return sum;
 }
-function printingResultTextValue(elementId, value) {
+// printing result 
+function printingResult(elementId,TotalSum) {
   const resultBox = document.getElementById(elementId);
-  elementId.innerText = value;
-  return resultBox;
+  resultBox.innerText = TotalSum;
+
 }
+
